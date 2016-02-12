@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sign Language Flash Cards</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        
+        <div class='content'>
+            
+            <div class="container header">
+                <h1>Sign Language for Babies and Toddlers</h1>
+            </div>
+
+            <div class="container choices">
+                <button class="btn" id="all">See All Cards</button>
+                <button class="btn" id="hard">Cards to Work On</button>
+                <button class="btn" id="known">Cards You Know</button>
+            </div>
+
+
+            <div class="container cards">
+
+                <div class="new-cards">
+                    <div id="new">
+                        <p>Text Placeholder</p>
+                    </div>
+                    <button class="btn next">Next</button>
+                </div>
+
+                <div class="repeat-cards">
+                    <div id="repeat"></div>
+                    <button class="btn next">Next</button>
+                </div>
+
+                <div class="known-cards">
+                    <div id="complete"></div>
+                    <button class="btn next">Next</button>
+                </div>        
+            </div>
+
+            <div class='action-buttons'>
+                    <button class="btn" id="addKnown">Easy!</button>
+                    <button class="btn" id="addRepeat">Needs Work</button>
+            </div>
+            
+        </div>
+        
+        
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
