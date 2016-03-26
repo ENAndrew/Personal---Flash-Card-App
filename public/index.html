@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app="cardApp">
     <head>
         <title>Sign Language Flash Cards</title>
         <meta charset="UTF-8">
@@ -13,31 +13,16 @@
         <div class='content'>
             
             <div class="container header">
-                <h1>Sign Language for Babies and Toddlers</h1>
+                <a ui-sref="home"><h1>Sign Language for Babies and Toddlers</h1></a>
             </div>
 
-            <div class="container choices">
-                <button class="btn" id="all">See All Cards</button>
-                <button class="btn" id="hard">Cards to Work On</button>
-                <button class="btn" id="known">Cards You Know</button>
+            <choices-directive></choices-directive>
+
+
+            <div>
+                <div ui-view></div>
             </div>
-
-
-            <div class="container cards">
-
-                <div class="new-cards">
-                    <div id="new">
-                        <p id="currentItem">Choose a Deck</p>
-                    </div>
-                    <button class="btn next">Next</button>
-                </div>
-       
-            </div>
-
-            <div class='action-buttons'>
-                    <button class="btn" id="addKnown">Easy!</button>
-                    <button class="btn" id="addRepeat">Needs Work</button>
-            </div>
+  
             
         </div>
         
@@ -45,6 +30,8 @@
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js" type="text/javascript"></script>
-        <script type="text/javascript" src="js/app.js"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        <script src="../directives/directives.js" type="text/javascript"></script>
+        
     </body>
 </html>
