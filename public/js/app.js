@@ -20,6 +20,11 @@ app.config(function($urlRouterProvider, $stateProvider){
             .state('easyCards', {
                 url: '/easy',
                 templateUrl: 'views/easyCards.html'
+    })
+            .state('addNew', {
+                url: '/add-new',
+                templateUrl: 'views/addNew.html',
+                controller: 'addNewCtrl'
     });
     
     $urlRouterProvider.otherwise('/');

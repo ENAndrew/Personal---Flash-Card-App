@@ -67,6 +67,13 @@ html, body {
     margin-top: 70px;
 }
 
+.new-cards .form-group {
+    padding-top: 70px;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .action-buttons {
     background-color: #a8a66a;
     margin-right: auto;
@@ -84,4 +91,26 @@ html, body {
     margin-top: 20px;
     background-color: #92d1d3;
 }
+
+.addNew {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.addNew .btn {
+    background-color: #515354;
+    width: 200px;
+    height: 70px;
+    color: white;
+    font-size: 20px;
+}
+
+#makeNew {
+    margin-left: 250px;
+    margin-top: 20px;
+    
+}
+
+
 
