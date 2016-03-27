@@ -12,6 +12,14 @@ app.config(function($urlRouterProvider, $stateProvider){
             .state('mainCards', {
                 url: '/cards',
                 templateUrl: 'views/mainCards.html'
+    })
+            .state('hardCards', {
+                url: '/challenging',
+                templateUrl: 'views/hardCards.html'
+    })
+            .state('easyCards', {
+                url: '/easy',
+                templateUrl: 'views/easyCards.html'
     });
     
     $urlRouterProvider.otherwise('/');
